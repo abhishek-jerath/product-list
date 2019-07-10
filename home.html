@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DineMoney</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="home.css">
+  <link href="https://fonts.googleapis.com/css?family=DM+Serif+Text|Quicksand|Russo+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <script   src="https://code.jquery.com/jquery-3.4.1.min.js"   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="   crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.caroufredsel/6.2.1/jquery.carouFredSel.packed.js"></script>
+<script type="text/javascript " src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+
+  <script type="text/javascript" src="home.js"></script>
+
+
+
+</head>
+<body>
+  <!-- *******************************************navbar***************************************************** -->
+  <div class="topnav">
+    <a class="active" href="#home">DineMoney!!</a>
+    <a href="#about">Location</a>
+    <a href="#contact">Contact Us</a>
+    <a href="#Funding">Funding</a>
+    <a href="#Ideas">Ideas</a>
+    <a href="#Join Us">Join Us</a>
+    <a href="#"><span class="glyphicon glyphicon-log-in" data-toggle="modal" data-target="#myModal"> <strong>Login</strong></span></a>
+
+    <input type="text" placeholder="Search..">
+  </div>
+
+
+
+
+  <!-- ************************************* Login Overlay ********************************************** -->
+
+
+
+
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content" style="width: 450px" >
+      <div class="modal-header" style="margin-top: 100px"><h4 class="modal-title" id="myModalLabel">Login/Registration</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+        ×</button>
+
+      </div>
+      <div class="modal-body" >
+        <div class="row">
+          <div class="col-md-12">
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs">
+              <li class="active">&emsp; &emsp; &emsp; &emsp; &emsp; <a href="#Login" data-toggle="tab"> Login  </a>&emsp;</li>
+              <li> &emsp; &emsp; &emsp; &emsp; &emsp; <a href="#Registration" data-toggle="tab">Registration</a></li>
+            </ul>
+            <!-- Tab panes -->
+            <div class="tab-content">
+              <div class="tab-pane active" id="Login">
+                <form role="form" class="form-horizontal">
+                  <div class="form-group">
+                    <label for="email" class="col-sm-2 control-label">
+                    Email</label>
+                    <div class="col-sm-7">
+                      <input type="email" class="form-control" id="email1" placeholder="Email" />
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1" class="col-sm-2 control-label">
+                    Password</label>
+                    <div class="col-sm-7">
+                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" />
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-2">
+                    </div>
+                    <div class="col-sm-10">&emsp;
+                      <button type="submit" class="btn btn-primary btn-sm">Submit</button>
+                      &emsp; &emsp;&emsp; &emsp; &emsp;&emsp;&emsp;<a href="javascript:;">Forgot your password?</a>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="tab-pane" id="Registration" >
+                <form role="form" class="form-horizontal">
+                  <div class="form-group">
+                    <label for="email" class="col-sm-2 control-label">
+                    Name</label>
+                    <div class="col-sm-10">
+                      <div class="row">
+                        <!-- <div class="col-md-2">
+                          <select class="form-control align-center" >
+                            <option>Mr.</option>
+                            <option>Ms.</option>
+                            <option>Mrs.</option>
+                          </select>
+                        </div> -->
+                        <div class="col-md-7">
+                          <input type="text" class="form-control" placeholder="Name" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="email" class="col-sm-2 control-label">
+                    Email</label>
+                    <div class="col-sm-8">
+                      <input type="email" class="form-control" id="email" placeholder="Email" />
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="mobile" class="col-sm-2 control-label">
+                    Mobile</label>
+                    <div class="col-sm-8">
+                      <input type="email" class="form-control" id="mobile" placeholder="Mobile" />
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="password" class="col-sm-2 control-label">
+                    Password</label>
+                    <div class="col-sm-8">
+                      <input type="password" class="form-control" id="password" placeholder="Password" />
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-2">
+                    </div>
+                    <div class="col-sm-10">
+                      <button type="button" class="btn btn-primary btn-sm">
+                      Save & Continue</button>
+                      <button type="button" class="btn btn-default btn-sm">
+                      Cancel</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+          </div>
+                        <!-- <div class="col-md-4">
+                            <div class="row text-center sign-with">
+                                <div class="col-md-12">
+                                    <h3>
+                                        Sign in with</h3>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="btn-group btn-group-justified">
+                                        <a href="#" class="btn btn-primary">Facebook</a> <a href="#" class="btn btn-danger">
+                                            Google</a>
+                                    </div>
+                                </div>
+                            </div>
+                          </div> -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <script type="text/javascript">
+                  $('#myModal').modal('show');
+                </script>
+
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+
+<!-- ********************************************slideshow***************************************************** -->
+<br><br><br>
+
+
+<div id="wrapper">
+  <div id="carousel">
+    <!-- <div class="empty"></div> -->
+    <div style="background-color: #cec; border-radius: 0px">
+      <img src="crowdfunding1.jpg" width="554" height="313" />
+      <!-- <img src="https://blog.bannersnack.com/wp-content/uploads/2018/01/Blog-Post-Process-of-creating-ads.jpg" width="554" height="313" /> -->
+      <span>A Bug's Life</span>
+    </div>
+    <div style="background-color: #ecc;">
+      <img src="crowdfunding2.jpg" width="554" height="313" />
+      <!-- <img src="https://3.bp.blogspot.com/-TjJ4W4oX4Tw/XNMG9K9jCZI/AAAAAAAABEs/_TYPxEpjjbE6YfHW6YEGsZgNx_KW4DYIwCLcBGAs/s1600/Describe%2Ban%2Badvertisement%2Bthat%2Byou%2Bremember%2BIELTS%2Bcue%2Bcard.png" width="554" height="313" /> -->
+      <span>The Incredibles</span>
+    </div>
+    <div style="background-color: #cde;">
+      <img src="crowdfunding3.jpg" />
+      <!-- <img src="https://camblycontent.files.wordpress.com/2017/02/advertising-word-block.jpg?w=700" width="554" height="313" /> -->
+      <span>Monsters, Inc.</span>
+    </div>
+    <div style="background-color: #eec;">
+      <img src="crowdfunding1.jpg" width="554" height="313" />
+      <!-- <img src="https://www.businessstudynotes.com/wp-content/uploads/2016/08/Target-Marketing-Strategies.png" width="554" height="313" /> -->
+      <span>Ratatouille</span>
+    </div>
+    <div style="background-color: #ced;">
+      <img src="crowdfunding2.jpg" width="554" height="313" />
+      <!-- <img src="http://viralinnature.com/images/jasocial_feed/6566cf09f983abd529f626511cba6f4e.png" width="554" height="313" /> -->
+      <span>Toy Story</span>
+    </div>
+    <div style="background-color: #cce;">
+      <img src="crowdfunding3.jpg" width="554" height="313" />
+      <!-- <img src="https://previews.123rf.com/images/ezheviks/ezheviks1702/ezheviks170200012/71087592-advertising-related-words-and-marketing-concept-infographic-business-project-for-web-banner-and-crea.jpg" width="554" height="313" /> -->
+      <span>WALL-E</span>
+    </div>
+    <!-- <div class="empty"></div> -->
+  </div>
+ <!--  <a id="prev" href="#"></a>
+  <a id="next" href="#"></a> -->
+</div>
+
+
+
+
+
+<!-- *******************************************cards1************************************************************ -->
+
+<div id="leftside" align="left">
+<div class="heading">
+  <h3>Super Saver Restaurants&emsp;<button class="btn"><a href="#"> View All</a></button></h3>
+  <!-- <p>Pay up to 50% of the bill using the PromoCode.<hr align="center"></p> -->
+</div>
+<div id="card-wrapper">
+  <div id="inner">
+    <div id="card-carousel" style="text-align: left; float: none; position: absolute; z-index: auto; width: 100%; height: 252px; left: 0px; overflow: hidden; top: 0px; right: auto; bottom: auto; margin: 0px;">
+      <div class="shirts">
+        <img src="https://im1.dineout.co.in/images/uploads/restaurant/sharpen/3/h/j/p34822-15599108255cfa59a9a8c1d.jpg?tr=w-300" width="100%" height="200" />
+        <h3>AnnaMaya</h3>
+      </div>
+      <div class="shirts">
+        <img src="https://im1.dineout.co.in/images/uploads/restaurant/sharpen/2/p/d/p21171-149224329158f1d35b731c8.jpg?tr=w-300" width="100%" height="200" />
+        <h3>Thyme</h3>
+      </div>
+      <div class="shirts">
+        <img src="https://im1.dineout.co.in/images/uploads/restaurant/sharpen/2/f/w/p2984-150598215059c376c6740ca.jpg?tr=w-300" width="100%" height="200" />
+        <h3>Food Exchange</h3>
+      </div>
+      <div class="shirts">
+        <img src="https://im1.dineout.co.in/images/uploads/restaurant/sharpen/4/j/h/p40176-15419278855be7f3cd5d956.jpg?tr=w-300" width="100%" height="200" />
+        <h3>Bukhara</h3>
+      </div>
+      <div class="shirts">
+        <img src="https://im1.dineout.co.in/images/uploads/restaurant/sharpen/4/h/u/p4059-15500352575c63a9394c209.jpg?tr=w-300&w=400" width="100%" height="200" />
+        <h3>Lanterns Kitchen</h3>
+      </div>
+      <div class="shirts">
+        <img src="https://im1.dineout.co.in/images/uploads/restaurant/sharpen/4/h/u/p4059-15500352575c63a9394c209.jpg?tr=w-300&w=400" width="100%" height="200" />
+        <h3>Juniper Bar</h3>
+      </div>
+      <div class="shirts">
+        <img src="https://im1.dineout.co.in/images/uploads/restaurant/sharpen/5/z/z/p53616-15568788455ccc15fdc86cf.jpg?tr=w-300&w=400" width="100%" height="200" />
+        <h3>Quoin</h3>
+      </div>
+      <div class="shirts">
+        <img src="https://im1.dineout.co.in/images/uploads/restaurant/sharpen/5/p/m/p55430-15596777545cf6cb3adc115.jpg?tr=w-300&w=400" width="100%" height="200" />
+        <h3>CIA Call it Asiian</h3>
+      </div>
+    </div>
+    <!-- <div id="pager">
+      <strong>Choose a category:</strong> &nbsp;
+      <a href="#jeans">Jeans</a> &bull;
+      <a href="#shirts">Shirts</a> &bull;
+      <a href="#shoes">Shoes</a> &bull;
+      <a href="#jackets">Jackets</a>
+    </div> -->
+    <a href="#" id="card-prev"></a>
+    <a href="#" id="card-next"></a>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<!-- **********************************************card2***************************************************** -->
+
+
+
+<div class="heading">
+  <h3>Featured Restaurants&emsp;<button class="btn"><a href="#"> View All</a></button></h3>
+  <!-- <p>We loved these restaurants and we are sure you would too.<hr align="center"></p> -->
+</div>
+<div id="card-wrapper2">
+  <div id="inner2">
+    <div id="card-carousel2" style="text-align: left; float: none; position: absolute; z-index: auto; width: 100%; height: 252px; left: 0px; overflow: hidden; top: 0px; right: auto; bottom: auto; margin: 0px;">
+      <div class="shirts">
+        <img src="https://im1.dineout.co.in/images/uploads/restaurant/sharpen/3/h/j/p34822-15599108255cfa59a9a8c1d.jpg?tr=w-300" width="100%" height="200" />
+        <h3>Cause Kitchen</h3>
+      </div>
+      <div class="shirts">
+        <img src="https://im1.dineout.co.in/images/uploads/restaurant/sharpen/2/p/d/p21171-149224329158f1d35b731c8.jpg?tr=w-300" width="100%" height="200" />
+        <h3>Krishna Roof Top</h3>
+      </div>
+      <div class="shirts">
+        <img src="https://im1.dineout.co.in/images/uploads/restaurant/sharpen/2/f/w/p2984-150598215059c376c6740ca.jpg?tr=w-300" width="100%" height="200" />
+        <h3>Stoned Pizzeria</h3>
+      </div>
+      <div class="shirts">
+        <img src="https://im1.dineout.co.in/images/uploads/restaurant/sharpen/4/j/h/p40176-15419278855be7f3cd5d956.jpg?tr=w-300" width="100%" height="200" />
+        <h3>The Exotic Roof</h3>
+      </div>
+      <div class="shirts">
+        <img src="https://im1.dineout.co.in/images/uploads/restaurant/sharpen/2/n/m/p20941-15378744725baa1a2880c54.jpg?tr=w-300&w=400" width="100%" height="200" />
+        <h3>Bagundi</h3>
+      </div>
+      <div class="shirts">
+        <img src="https://im1.dineout.co.in/images/uploads/restaurant/sharpen/4/h/u/p4059-15500352575c63a9394c209.jpg?tr=w-300&w=400" width="100%" height="200" />
+        <h3>Pluck</h3>
+      </div>
+      <div class="shirts">
+        <img src="https://im1.dineout.co.in/images/uploads/restaurant/sharpen/5/z/z/p53616-15568788455ccc15fdc86cf.jpg?tr=w-300&w=400" width="100%" height="200" />
+        <h3>Pluck</h3>
+      </div>
+      <div class="shirts">
+        <img src="https://im1.dineout.co.in/images/uploads/restaurant/sharpen/5/p/m/p55430-15596777545cf6cb3adc115.jpg?tr=w-300&w=400" width="100%" height="200" />
+        <h3>AMA Cafe</h3>
+      </div>
+    </div>
+    <!-- <div id="pager">
+      <strong>Choose a category:</strong> &nbsp;
+      <a href="#jeans">Jeans</a> &bull;
+      <a href="#shirts">Shirts</a> &bull;
+      <a href="#shoes">Shoes</a> &bull;
+      <a href="#jackets">Jackets</a>
+    </div> -->
+    <a href="#" id="card-prev2"></a>
+    <a href="#" id="card-next2"></a>
+  </div>
+</div>
+
+<!-- ***************************************************card3**************************************** -->
+
+
+
+<div class="heading">
+  <h3>Popular in Delhi&emsp;<button class="btn"><a href="#"> View All</a></button></h3>
+  <!-- <p>All time favourite restaurants.<hr align="center"></p> -->
+</div>
+<div id="card-wrapper3">
+  <div id="inner3">
+    <div id="card-carousel3" style="text-align: left; float: none; position: absolute; z-index: auto; width: 100%; height: 252px; left: 0px; overflow: hidden; top: 0px; right: auto; bottom: auto; margin: 0px;">
+      <div class="shirts">
+        <img src="https://im1.dineout.co.in/images/uploads/restaurant/sharpen/3/h/j/p34822-15599108255cfa59a9a8c1d.jpg?tr=w-300" width="100%" height="200" />
+        <h3>Roadhouse Cafe </h3>
+      </div>
+      <div class="shirts">
+        <img src="https://im1.dineout.co.in/images/uploads/restaurant/sharpen/2/p/d/p21171-149224329158f1d35b731c8.jpg?tr=w-300" width="100%" height="200" />
+        <h3>Spring</h3>
+      </div>
+      <div class="shirts">
+        <img src="https://im1.dineout.co.in/images/uploads/restaurant/sharpen/2/f/w/p2984-150598215059c376c6740ca.jpg?tr=w-300" width="100%" height="200" />
+        <h3>Thyme</h3>
+      </div>
+      <div class="shirts">
+        <img src="https://im1.dineout.co.in/images/uploads/restaurant/sharpen/4/j/h/p40176-15419278855be7f3cd5d956.jpg?tr=w-300" width="100%" height="200" />
+        <h3>The Hong Kong</h3>
+      </div>
+      <div class="shirts">
+        <img src="https://im1.dineout.co.in/images/uploads/restaurant/sharpen/2/n/m/p20941-15378744725baa1a2880c54.jpg?tr=w-300&w=400" width="100%" height="200" />
+        <h3>Dvar Restaurant</h3>
+      </div>
+      <div class="shirts">
+        <img src="https://im1.dineout.co.in/images/uploads/restaurant/sharpen/4/h/u/p4059-15500352575c63a9394c209.jpg?tr=w-300&w=400" width="100%" height="200" />
+        <h3>Waffle</h3>
+      </div>
+      <div class="shirts">
+        <img src="https://im1.dineout.co.in/images/uploads/restaurant/sharpen/5/z/z/p53616-15568788455ccc15fdc86cf.jpg?tr=w-300&w=400" width="100%" height="200" />
+        <h3>Cascades</h3>
+      </div>
+      <div class="shirts">
+        <img src="https://im1.dineout.co.in/images/uploads/restaurant/sharpen/5/p/m/p55430-15596777545cf6cb3adc115.jpg?tr=w-300&w=400" width="100%" height="200" />
+        <h3>The Imperial</h3>
+      </div>
+    </div>
+    <!-- <div id="pager">
+      <strong>Choose a category:</strong> &nbsp;
+      <a href="#jeans">Jeans</a> &bull;
+      <a href="#shirts">Shirts</a> &bull;
+      <a href="#shoes">Shoes</a> &bull;
+      <a href="#jackets">Jackets</a>
+    </div> -->
+    <a href="#" id="card-prev3"></a>
+    <a href="#" id="card-next3"></a>
+  </div>
+</div>
+</div>
+<!-- *****************************crowdfunding**************************** -->
+
+<!-- <div id="leftside" align="right" style="margin-top: -1360px" >
+  <div id="donate">
+    <img src="https://im1.dineout.co.in/images/uploads/restaurant/sharpen/5/z/z/p53616-15568788455ccc15fdc86cf.jpg?tr=w-300&w=400" alt="Card image cap" width="28%" height="625px">
+    <button class="btn">Donate Funds</button>
+  </div>
+  <br>
+  <div id="raise">
+<img src="https://im1.dineout.co.in/images/uploads/restaurant/sharpen/5/z/z/p53616-15568788455ccc15fdc86cf.jpg?tr=w-300&w=400" alt="Card image cap" width="28%" height="625px">
+<button class="btn">Raise Funds</button>
+</div>
+
+</div> -->
+
+
+<!-- ********************************************ideas slider********************************************** -->
+
+
+<!-- &emsp;&emsp;&emsp;
+<img src="https://im1.dineout.co.in/images/uploads/restaurant/sharpen/5/z/z/p53616-15568788455ccc15fdc86cf.jpg?tr=w-300&w=400" alt="Card image cap" width="70%" height="200px">
+&emsp; -->
+<!-- <img src="https://im1.dineout.co.in/images/uploads/restaurant/sharpen/5/z/z/p53616-15568788455ccc15fdc86cf.jpg?tr=w-300&w=400" alt="Card image cap" width="45%" height="200px"> -->
+
+<div class="heading">
+  <h3>Campaign Ideas</h3>
+</div>
+<div id="idwrapper">
+  <div id="idcarousel">
+    <img src="idea1.jpg" />
+    <img src="idea2.jpg" />
+    <img src="idea3.jpg" />
+    <img src="idea4.jpg" />
+    <img src="idea5.jpg" />
+    <img src="idea2.jpg" />
+  </div>
+  <!-- <a id="idprev" href="#"></a>
+  <a id="idnext" href="#"></a> -->
+  <div id="idpager"></div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<!-- ***************************************************why our website************************************** -->
+<div class="heading">
+  <h3>Why Book with DineMoney</h3>
+</div>
+<br>
+<div class= "row">
+  <div class="column"><h4><i class="fa fa-star animated bounce infinite " style="font-size:100px"></i><br><b>Awesome Deals</b></h4><p>We have amazing deals</p></div>
+  <div class="column"><h4><i class="fa fa-bolt animated bounce infinite" style="font-size:100px"></i><br><b>Quick Bookings</b></h4><p>Book a table within seconds</p></div>
+  <div class="column"><h4><i class="fa fa-history animated bounce infinite" style="font-size:100px"></i><br><b>Free Cancellations</b></h4><p>No hidden charges</p></div>
+</div>
+
+<!-- ***********************************************give share receive****************************** -->
+
+<div class="heading">
+  <h3>Earn money with DineMoney </h3>
+</div>
+<div class="row" style="background: rgba(255, 230, 243,0.3);">
+  <div class="column"><h4><b>Give</b></h4><br>
+    <script>
+      new WOW().init();
+    </script>
+    <img  class="wow bounceInUp" src="https://assets.5050cf.com/assets/home/img/share_step_1.png">
+    <h4 style="font-family: 'Quicksand', sans-serif; font-size: 30px; font-weight: bold; color: purple; ">Step 1</h4>
+    <p  style="font-size: 20px; color: purple" align="center">Register and Donate to Become<br> an Active</p>
+  </div>
+  <div class="column"><h4><b>Share</b></h4><br>
+    <img  class="wow bounceInUp" src="https://assets.5050cf.com/assets/home/img/share_step_2.png">
+    <h4 style="font-family: 'Quicksand', sans-serif; font-size: 30px; font-weight: bold; color: purple; ">Step 2</h4>
+    <p  style="font-size: 20px; color: purple" align="center">Help 2 or more to become <br>Active Donors</p>
+  </div>
+  <div class="column"><h4><b>Receive</b></h4><br>
+    <img  class="wow bounceInUp "src="https://assets.5050cf.com/assets/home/img/share_step_3.png">
+    <h4 style="font-family: 'Quicksand', sans-serif; font-size: 30px; font-weight: bold; color: purple; ">Step 3</h4>
+    <p style="font-size: 20px; color: purple" align="center">They help 2 or more to<br> become Active Donors</p>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<!-- **************************************************FOOTER************************************************** -->
+<div class="content">
+</div>
+<footer id="myFooter">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <h2 class="logo"><a href="#"> Dine<br>Money </a></h2>
+      </div>
+      <div class="col-sm-2">
+        <h5>Get started</h5>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Food Critics</a></li>
+          <li><a href="#">Refer & Earn</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-2">
+        <h5>About us</h5>
+        <ul>
+          <li><a href="#">Company Information</a></li>
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">Reviews</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-2">
+        <h5>Support</h5>
+        <ul>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Help desk</a></li>
+          <li><a href="#">Forums</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-3">
+        <div class="social-networks">
+          <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+          <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+          <a href="#" class="google"><i class="fa fa-google-plus"></i></a>
+        </div>
+        <button type="button" class="btn btn-default">Contact us</button>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <p>© 2019, dinemoney.com All Rights Reserved. </p>
+  </div>
+</footer>
+
+
+
+
+
+</body>
+</html>
